@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         header {
@@ -84,7 +85,6 @@
             margin-bottom: 15px;
         }
 
-        /* Pulsanti Doppi */
         .btn-group {
             display: flex;
             flex-direction: column;
@@ -102,24 +102,13 @@
             transition: 0.3s;
             border: 1px solid var(--gold);
             font-family: 'Cinzel', serif;
+            text-align: center;
         }
 
-        .btn-deposit {
-            background: transparent;
-            color: var(--gold);
-        }
+        .btn-deposit { background: transparent; color: var(--gold); }
+        .btn-folder { background: var(--gold); color: black; }
+        .btn:hover { filter: brightness(1.2); transform: scale(1.02); }
 
-        .btn-folder {
-            background: var(--gold);
-            color: black;
-        }
-
-        .btn:hover {
-            filter: brightness(1.2);
-            transform: scale(1.02);
-        }
-
-        /* Registro */
         .history-section { background: var(--card-bg); padding: 30px; border: 1px solid #333; }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
         th { color: var(--gold); text-align: left; border-bottom: 2px solid var(--gold); padding: 12px; font-family: 'Cinzel', serif; }
@@ -138,7 +127,6 @@
 </header>
 
 <div class="container">
-    
     <section class="manifesto">
         <h2 style="font-family:'Cinzel'; color:var(--gold); text-align:center; margin-top:0;">Atto di Fondazione</h2>
         <p style="text-align: justify; color: #bbb; font-size: 0.95rem;">
